@@ -1,0 +1,25 @@
+<resources>
+    <!-- Language Preference -->
+    <string-array name="language_entries">
+        <item>English</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="unit_entries">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>English</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+
+    <string-array name="unit_values">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+</resources>
