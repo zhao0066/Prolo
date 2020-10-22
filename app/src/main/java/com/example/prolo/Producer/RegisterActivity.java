@@ -27,6 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
         buttonRegister = findViewById(R.id.buttonRegister);
 
         buttonRegister.setOnClickListener(v -> {
+            // TO DO - user info will not be saved for prototype 1 yet
             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
         });
     }

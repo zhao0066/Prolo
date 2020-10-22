@@ -24,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         textViewRegister = findViewById(R.id.textViewRegisterLink);
 
         buttonLogin.setOnClickListener(v -> {
+            // TO DO - no authentication code for prototype 1 yet
             startActivity(new Intent(LoginActivity.this, ProductGroupListActivity.class));
         });
 
