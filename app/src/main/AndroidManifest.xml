@@ -21,6 +21,12 @@
             android:label="@string/app_name">
         </activity>
         <activity
+            android:name="com.example.prolo.Producer.LoginActivity"
+            android:label="Login or Register" />
+        <activity
+            android:name="com.example.prolo.Producer.RegisterActivity"
+            android:label="Register" />
+        <activity
             android:name=".Producer.ProductGroupListActivity"
             android:label="Product Group List" />
         <activity

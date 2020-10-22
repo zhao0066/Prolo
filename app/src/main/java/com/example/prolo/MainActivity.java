@@ -10,7 +10,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.prolo.Producer.ProductGroupListActivity;
+import com.example.prolo.Producer.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.profileItem:
-                startActivity(new Intent(MainActivity.this, ProductGroupListActivity.class));
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 break;
         }
 
