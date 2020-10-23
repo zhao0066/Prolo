@@ -32,12 +32,18 @@ public class ProductListActivity extends AppCompatActivity {
         setContentView(R.layout.product_list);
         thisApp = this;
 
-        // Populate product product list from database, hard coded now for prototype demo
-        productList.add(new ProductData("1", "16", "Butter, whipped", ""));
-        productList.add(new ProductData("1", "19", "Cheese, brick", ""));
-        productList.add(new ProductData("1", "66", "Milk, dry whole", ""));
-        productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+        Bundle dataReceived = getIntent().getExtras();
+        String selectedGroupId = dataReceived.getString(ProductGroupListActivity.GROUP_ID);
 
+        if (Integer.valueOf(selectedGroupId) == 1) {
+            // Populate product product list from database, hard coded now for prototype demo
+            productList.add(new ProductData("1", "16", "Butter, whipped", ""));
+            productList.add(new ProductData("1", "19", "Cheese, brick", ""));
+            productList.add(new ProductData("1", "66", "Milk, dry whole", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+        } else {
+            productList.add(new ProductData( "", "", "No product offered by you", ""));
+        }
         ListView productListView = findViewById(R.id.listProductList);
         productListView.setAdapter(productListAdapter = new ProductListAdapter());
         productListAdapter.notifyDataSetChanged();
