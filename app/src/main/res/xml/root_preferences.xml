@@ -9,7 +9,8 @@
             android:key="edit_text_preference_1"
             app:key="location"
             app:title="@string/location_title"
-            app:useSimpleSummaryProvider="true" />
+            app:useSimpleSummaryProvider="true"
+            />
         <ListPreference
             app:defaultValue="unit"
             app:entries="@array/unit_entries"
