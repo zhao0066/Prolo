@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentLocation"
+    >>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#A4222020"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/produce_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00E21414"
+            android:backgroundTint="#E7E7E7"
+            android:backgroundTintMode="multiply"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:text="Product: "
+            android:textColor="#F1EDED"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00E21414"
+            android:backgroundTint="#E7E7E7"
+            android:backgroundTintMode="multiply"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Address: "
+            android:textColor="#F1EDED" />
+
+        <TextView
+            android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00E21414"
+            android:backgroundTint="#E7E7E7"
+            android:backgroundTintMode="multiply"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Contact(s): "
+            android:textColor="#F1EDED" />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00E21414"
+            android:backgroundTint="#E7E7E7"
+            android:backgroundTintMode="multiply"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Phone Number: "
+            android:textColor="#F1EDED" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00E21414"
+            android:backgroundTint="#E7E7E7"
+            android:backgroundTintMode="multiply"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="email: "
+            android:textColor="#F1EDED" />
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00E21414"
+            android:backgroundTint="#E7E7E7"
+            android:backgroundTintMode="multiply"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="website: "
+            android:textColor="#F1EDED" />
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00E21414"
+            android:backgroundTint="#E7E7E7"
+            android:backgroundTintMode="multiply"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Company name:"
+            android:textColor="#F1EDED" />
+
+        <Button
+            android:id="@+id/copyGMap"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:backgroundTint="#009688"
+            android:text="Copy Gmap Plus Code"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/copyAddress"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:backgroundTint="#009688"
+            android:text="Copy Address"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:backgroundTint="#009688"
+            android:text="Contact"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/picture"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
