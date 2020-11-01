@@ -26,22 +26,6 @@ public class RegisterProducerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
 
-        Toolbar tbar = findViewById(R.id.toolbar);
-        setSupportActionBar(tbar);
-        getSupportActionBar().setTitle(null);
-        if(getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setHomeButtonEnabled(true);
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }
-        tbar.setNavigationIcon(R.drawable.logo);
-        tbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Do whatever you want to do here
-            }
-        });
-
         editTextFirstName = findViewById(R.id.editTextFirstName);
         editTextLastName = findViewById(R.id.editTextLastName);
         editTextUsername = findViewById(R.id.editTextRegisterUsername);
@@ -56,27 +40,4 @@ public class RegisterProducerActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbarRegister);
         setSupportActionBar(toolbar);
     }
-
-    public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu, menu);
-        return true;
-    }
-
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch(item.getItemId()){
-            case R.id.pencilItem:
-                break;
-
-            case R.id.gearItem:
-                Intent goToSettings = new Intent(RegisterActivity.this, com.example.prolo.Producer.RegisterActivity.class);
-                startActivity(goToSettings);
-                break;
-
-        }
-
-        return true;
-    }
-
-
 }
