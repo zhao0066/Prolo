@@ -41,8 +41,38 @@ public class ProductListActivity extends AppCompatActivity {
             productList.add(new ProductData("1", "19", "Cheese, brick", ""));
             productList.add(new ProductData("1", "66", "Milk, dry whole", ""));
             productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
+            productList.add(new ProductData("1", "87", "Egg, chicken, yolk, dried", ""));
         } else {
-            productList.add(new ProductData( "", "", "No product offered by you", ""));
+            productList.add(new ProductData( " ", " ", "No product offered by you", ""));
         }
         ListView productListView = findViewById(R.id.listProductList);
         productListView.setAdapter(productListAdapter = new ProductListAdapter());
@@ -55,15 +85,16 @@ public class ProductListActivity extends AppCompatActivity {
                 dataToPass.putString(GROUP_ID, productList.get(position).getGroupId());
                 dataToPass.putString(PRODUCT_ID, productList.get(position).getProductId());
                 dataToPass.putString(PRODUCT_DESCRIPTION, productList.get(position).getProductId());
-
-                Intent nextActivity = new Intent(ProductListActivity.this, ProductListActivity.class);
-                nextActivity.putExtras(dataToPass);
-                startActivity(nextActivity);
             }
         });
 
         Toolbar toolbar = findViewById(R.id.toolbarProductList);
         setSupportActionBar(toolbar);
+
+        View fab = findViewById(R.id.fabNewProduct);
+        fab.setOnClickListener((a) -> {
+            startActivity(new Intent(this, RegisterProductActivity.class));
+        });
     }
 
     private class ProductListAdapter extends BaseAdapter {

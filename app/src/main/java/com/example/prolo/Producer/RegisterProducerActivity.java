@@ -7,10 +7,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.prolo.R;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterProducerActivity extends AppCompatActivity {
     Button buttonRegister;
     EditText editTextFirstName, editTextLastName;
     EditText editTextUsername, editTextPassword;
@@ -28,7 +29,10 @@ public class RegisterActivity extends AppCompatActivity {
 
         buttonRegister.setOnClickListener(v -> {
             // TO DO - user info will not be saved for prototype 1 yet
-            startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+            startActivity(new Intent(RegisterProducerActivity.this, LoginActivity.class));
         });
+
+        Toolbar toolbar = findViewById(R.id.toolbarRegister);
+        setSupportActionBar(toolbar);
     }
 }
