@@ -7,6 +7,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.example.prolo.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -29,7 +31,10 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         textViewRegister.setOnClickListener(v -> {
-            startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+            startActivity(new Intent(LoginActivity.this, RegisterProducerActivity.class));
         });
+
+        Toolbar toolbar = findViewById(R.id.toolbarLogin);
+        setSupportActionBar(toolbar);
     }
 }

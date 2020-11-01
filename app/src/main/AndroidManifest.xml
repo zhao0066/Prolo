@@ -18,14 +18,16 @@
         </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/app_name">
-        </activity>
+            android:label="@string/app_name" />
         <activity
-            android:name="com.example.prolo.Producer.LoginActivity"
-            android:label="Login or Register" />
+            android:name=".Producer.LoginActivity"
+            android:label="Producer Login" />
         <activity
-            android:name="com.example.prolo.Producer.RegisterActivity"
-            android:label="Register" />
+            android:name=".Producer.RegisterProductActivity"
+            android:label="Register Product" />
+        <activity
+            android:name=".Producer.RegisterProducerActivity"
+            android:label="Producer Register" />
         <activity
             android:name=".Producer.ProductGroupListActivity"
             android:label="Product Group List" />
